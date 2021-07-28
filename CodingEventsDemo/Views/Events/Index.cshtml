@@ -24,21 +24,40 @@ else
             <th>
                 Id
             </th>
+
             <th>
                 Name
             </th>
+
             <th>
                 Description
             </th>
+
+            <th>
+                Event Location
+            </th>
+
+            <th>
+                Number of Attendees
+            </th>
+
+            <th>
+                Contact Email
+            </th>
         </tr>
+
         @foreach (var evt in Model)
         {
             <tr>
                 <td>@evt.Id</td>
                 <td>@evt.Name</td>
                 <td>@evt.Description</td>
+                <td>@evt.EventLocation</td>
+                <td>@evt.NumOfAttendees</td>
+                <td>@evt.ContactEmail</td>
             </tr>
         }
+
     </table>
 }
 
